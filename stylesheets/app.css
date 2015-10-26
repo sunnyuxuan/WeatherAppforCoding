@@ -9774,7 +9774,7 @@ th.hide-for-touch {
 }
 
 /* line 36, ../scss/app.scss */
-#button1 {
+.button1 {
   background: #07e0a3;
   background-image: -webkit-linear-gradient(top, #07e0a3, #2bb8a0);
   background-image: -moz-linear-gradient(top, #07e0a3, #2bb8a0);
@@ -9792,7 +9792,7 @@ th.hide-for-touch {
 }
 
 /* line 53, ../scss/app.scss */
-#button1:hover {
+.button1:hover {
   background: #a9fc3c;
   background-image: -webkit-linear-gradient(top, #a9fc3c, #42d934);
   background-image: -moz-linear-gradient(top, #a9fc3c, #42d934);
@@ -9803,7 +9803,7 @@ th.hide-for-touch {
 }
 
 /* line 63, ../scss/app.scss */
-#button2 {
+.button2 {
   background: #f0ba30;
   background-image: -webkit-linear-gradient(top, #f0ba30, #fcda2f);
   background-image: -moz-linear-gradient(top, #f0ba30, #fcda2f);
@@ -9821,7 +9821,7 @@ th.hide-for-touch {
 }
 
 /* line 80, ../scss/app.scss */
-#button2:hover {
+.button2:hover {
   background: #fa9e3c;
   background-image: -webkit-linear-gradient(top, #fa9e3c, #f57e2e);
   background-image: -moz-linear-gradient(top, #fa9e3c, #f57e2e);
@@ -9854,11 +9854,11 @@ th.hide-for-touch {
 /* line 108, ../scss/app.scss */
 .date {
   font-family: 'Kranky', cursive;
-  font-size: 20px;
+  font-size: 15px;
 }
 
-/* line 113, ../scss/app.scss */
-#Aqi1, #Aqi2 {
+/* line 116, ../scss/app.scss */
+#prep1, #prep2 {
   text-align: center;
   color: mediumaquamarine;
   border-radius: 36px 36px 36px 36px;
@@ -9868,7 +9868,7 @@ th.hide-for-touch {
   border: 8px dotted #6ce6a5;
 }
 
-/* line 124, ../scss/app.scss */
+/* line 127, ../scss/app.scss */
 #UV1, #UV2 {
   text-align: center;
   color: orange;
@@ -9878,7 +9878,7 @@ th.hide-for-touch {
   border: 8px dotted #fc9a44;
 }
 
-/* line 133, ../scss/app.scss */
+/* line 136, ../scss/app.scss */
 #Humidity1, #Humidity2 {
   text-align: center;
   color: dodgerblue;
