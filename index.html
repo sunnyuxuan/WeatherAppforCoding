@@ -6,11 +6,10 @@
     <title>WeSmileHOME</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
     
-    <script language="javascript" type="text/javascript" src="../WeatherAppforCoding/p5.js"></script>
-	<script language="javascript" src="../WeatherAppforCoding/addons/p5.dom.js">           </script>
-  <script language="javascript" src="../WeatherAppforCoding/addons/p5.sound.js">            </script>
-  
-  <script language="javascript" type="text/javascript" src="../WeatherAppforCoding/js/sketch.js"></script>
+    <script language="javascript" type="text/javascript" src="p5.js"></script>
+  <script language="javascript" src="addons/p5.sound.js"></script>
+  <script language="javascript" src="addons/p5.dom.js"></script>
+  <script language="javascript" type="text/javascript" src="js/sketch.js"></script>
    
     <script src="bower_components/modernizr/modernizr.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
@@ -32,19 +31,23 @@
          <div class="row">
             <div class="small-4 text-center columns">
               <label for="left-label" class="left inline">
-              <h1 class="City1">Your City</h1></label>
+                  <h1 class="City1">Your City</h1>
+              </label>
             </div>
-        <div class="small-4 text-center columns" style="margin-top:43px;">
-              <input type="text" id="City1" placeholder="City Name">
+            
+            <div class="small-4 text-center columns" style="margin-top:43px;">
+              <input type="text" id="City1" placeholder="Miami FL">
+            </div>
+            
+            <div id="buttonparent1" class="small-4 text-center columns"  style="margin-top:43px;">            
         </div>
-        <div class="small-4 text-center columns" style="margin-top:43px;">
-            <a href="#" id="button1" >Search</a>
-        </div>
+        
          </div>
         
          <div class="row">
-             <div class="small-6 medium-6 columns">
-             <img src="img/egg.svg" alt="egg"></div>
+             <div id="weathericon1" class="small-6 medium-6 columns">
+                 <img src="img/egg.svg" alt="egg">
+             </div>
              
              <div class="small-6 medium-6 columns">
                  <h4 id="weather1">Sunny</h4>
@@ -53,41 +56,42 @@
          </div>
          
         <div class="row">
-            <div class="small-4 text-center columns"><img src="img/aqi.svg" alt="aqi"></div>
+            <div class="small-4 text-center columns"><img src="img/precipitation.svg" alt="aqi"></div>
             <div class="small-4 text-center columns"><img src="img/uv.svg" alt="uv" class="uv"></div>
             <div class="small-4 text-center columns"><img src="img/drop.svg" alt="hum"></div>
         </div>
            
            <div class="row">
-            <div class="small-4 columns">
-                <h3 id="Aqi1">Good</h3>
-         </div>
-             <div class="small-4 columns">
-                <h3 id="UV1">7 High</h3>
+                <div class="small-4 columns">
+                    <h3 id="prep1">3mm</h3>
+                 </div>
+                 <div class="small-4 columns">
+                    <h3 id="UV1">7</h3>
                   </div>
-            <div class="small-4 columns">
-            <h3 id="Humidity1">76%</h3>
+                <div class="small-4 columns">
+                    <h3 id="Humidity1">76%</h3>
+                </div>
             </div>
-        </div>
         
         <div class="row" style="margin-top:37px;margin-right:10px;">
            
             <div class="small-12 medium-12 large-12 text-center columns"><h4 class="date1">Chance of Precipitation</h4>
+            
             <div class="row">
-                <div class="small-2 columns"><h4 class="date">10/3</h4></div>
-                <div class="small-2 columns"><h4 class="date">10/4</h4></div>
-                <div class="small-2 columns"><h4 class="date">10/5</h4></div>
-                <div class="small-2 columns"><h4 class="date">10/6</h4></div>
-                <div class="small-2 columns"><h4 class="date">10/7</h4></div>
-                <div class="small-2 columns"><h4 class="date">10/8</h4></div>
+                <div id="day1" class="small-2 columns"><h4 class="date">Monday</h4></div>
+                <div id="day2"class="small-2 columns"><h4 class="date">Tuesday</h4></div>
+                <div id="day3"class="small-2 columns"><h4 class="date">Wednesday</h4></div>
+                <div id="day4"class="small-2 columns"><h4 class="date">Thursday</h4></div>
+                <div id="day5"class="small-2 columns"><h4 class="date">Friday</h4></div>
+                <div id="day6"class="small-2 columns"><h4 class="date">Saturday</h4></div>
             </div>
             <div class="row">
-                <div class="small-2 columns">20%</div>
-                <div class="small-2 columns">20%</div>
-                <div class="small-2 columns">10%</div>
-                <div class="small-2 columns">10%</div>
-                <div class="small-2 columns">60%</div>
-                <div class="small-2 columns">40%</div>
+                <div id="pop1" class="small-2 columns">20%</div>
+                <div id="pop2" class="small-2 columns">20%</div>
+                <div id="pop3" class="small-2 columns">10%</div>
+                <div id="pop4" class="small-2 columns">10%</div>
+                <div id="pop5" class="small-2 columns">60%</div>
+                <div id="pop6" class="small-2 columns">40%</div>
             </div>
             </div>
         </div>
@@ -100,32 +104,32 @@
               <label for="left-label" class="left inline"><h1 class="City1">His &frasl; Her City</h1></label>
         </div>
         <div class="small-4 text-center columns" style="margin-top:43px;">
-              <input type="text" id="City2" placeholder="City Name">
+              <input type="text" id="City2" placeholder="San_Francisco CA">
         </div>
-        <div class="small-4 text-center columns" style="margin-top:43px;">
-            <a href="#" id="button2" >Search</a>
+        <div id="buttonparent2" class="small-4 text-center columns" style="margin-top:43px;">
+            
         </div>
                 </div>
                 <div class="row">
-      <div class="small-6 medium-6 columns"><img src="img/mushroom.svg" alt="mushroom"></div>
+                  <div id="weathericon2" class="small-6 medium-6 columns"><img src="img/mushroom.svg" alt="mushroom"></div>
                    <div class="small-6 medium-6 columns">
-                 <h4 id="weather2">Rainy</h4>
-                 <h2 id="temp2">24 &#8451;</h2>
+                     <h4 id="weather2">Rainy</h4>
+                     <h2 id="temp2">24 &#8451;</h2>
                   
                    </div>
                 </div>
                 <div class="row">
-    <div class="small-4 text-center  columns"><img src="img/aqi.svg" alt="aqi"></div>
-            <div class="small-4 text-center columns"><img src="img/uv.svg" alt="uv" class="uv"></div>
-            <div class="small-4 text-center columns"><img src="img/drop.svg" alt="hum"></div>
+                    <div class="small-4 text-center  columns"><img src="img/precipitation.svg" alt="aqi"></div>
+                    <div class="small-4 text-center columns"><img src="img/uv.svg" alt="uv" class="uv"></div>
+                    <div class="small-4 text-center columns"><img src="img/drop.svg" alt="hum"></div>
                 </div>
                 
                 <div class="row">
             <div class="small-4 columns">
-                <h3 id="Aqi2">Good</h3>
+                <h3 id="prep2">4mm</h3>
             </div>
              <div class="small-4 columns">
-                 <h3 id="UV2">6 High</h3>
+                 <h3 id="UV2">6</h3>
              </div>
             <div class="small-4 columns">
                 <h3 id="Humidity2">83%</h3>
@@ -136,20 +140,21 @@
            
             <div class="small-12 medium-12 large-12 text-center columns"><h4 class="date1">Chance of Precipitation</h4>
             <div class="row">
-                 <div class="small-2 columns"><h4 class="date">10/3</h4></div>
-                <div class="small-2 columns"><h4 class="date">10/4</h4></div>
-                <div class="small-2 columns"><h4 class="date">10/5</h4></div>
-                <div class="small-2 columns"><h4 class="date">10/6</h4></div>
-                <div class="small-2 columns"><h4 class="date">10/7</h4></div>
-                <div class="small-2 columns"><h4 class="date">10/8</h4></div>
+                 <div id="day1a" class="small-2 columns"><h4 class="date">Monday</h4></div>
+                <div id="day2a" class="small-2 columns"><h4 class="date">Tuesday</h4></div>
+                <div id="day3a" class="small-2 columns"><h4 class="date">Wednesday</h4></div>
+                <div id="day4a" class="small-2 columns"><h4 class="date">Thursday</h4></div>
+                <div id="day5a" class="small-2 columns"><h4 class="date">Friday</h4></div>
+                <div id="day6a" class="small-2 columns"><h4 class="date">Saturday</h4></div>
             </div>
+            
             <div class="row">
-                <div class="small-2 columns">0%</div>
-                <div class="small-2 columns">0%</div>
-                <div class="small-2 columns">10%</div>
-                <div class="small-2 columns">10%</div>
-                <div class="small-2 columns">10%</div>
-                <div class="small-2 columns">10%</div>
+                <div id="pop1a" class="small-2 columns">0%</div>
+                <div id="pop2a" class="small-2 columns">0%</div>
+                <div id="pop3a" class="small-2 columns">10%</div>
+                <div id="pop4a" class="small-2 columns">10%</div>
+                <div id="pop5a" class="small-2 columns">10%</div>
+                <div id="pop6a" class="small-2 columns">10%</div>
             </div>
             </div>
         </div>
@@ -160,5 +165,6 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    
   </body>
 </html>
